@@ -229,9 +229,7 @@ input[type=submit] {
 /* Footer */
 
 footer {
-	position: fixed;
-	bottom: 0;
-	width: 100%;
+	
 
   padding: 30px 0;
   clear: both;
@@ -247,7 +245,7 @@ footer {
 @media screen and (max-width: 980px) {
 
 	#main-head {
-		width: 95%;
+		width: 100%;
 	}
 
 	#main-section {
@@ -265,37 +263,44 @@ footer {
 
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 640px) {
 
 	#main-head {
 		height: auto;
 	}
+	#main-container{
+		padding-top: 20px;
+	}
 
+	nav {
+		height: auto;
+		position: static;
+		float: left;
+		margin-left: 25%;
+		padding-right: 25%;
+		margin-bottom: 10px;
+	}
 
-	#main-nav {
+	#logo {
+		width: 100%;
 		position: static;
 	}
 
-	#site-logo {
-		margin: 15px 100px 5px 0;
-		position: static;
-	}
-
-	#site-description {
+	#main-head {
 		margin: 0 0 15px;
 		position: static;
 	}
 
-	#content {
+	#main-section {
 		width: auto;
 		float: none;
 		margin: 20px 0;
 	}
 
-	#sidebar {
-		width: 100%;
-		float: none;
-		margin: 0;
+	.sidebar {
+		max-width: 100%;
+		float: left;
+		margin: 0 0 20px;
 	}
 
 }
@@ -306,7 +311,7 @@ footer {
 		-webkit-text-size-adjust: none;
 	}
 
-	#main-nav a {
+	nav a {
 		font-size: 90%;
 		padding: 10px 8px;
 	}
